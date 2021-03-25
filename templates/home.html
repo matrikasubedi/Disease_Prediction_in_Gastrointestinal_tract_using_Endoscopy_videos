@@ -1,0 +1,38 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Upload Endoscopy Image</title>
+</head>
+<body>
+
+
+
+    <div class="col-sm">
+      <h1><span class="badge badge-danger">Endoscopy Image Prediction</span></h1>
+    </div>
+
+    <div class="col-sm">
+      <form action = "/predict" method = "post" enctype="multipart/form-data">
+        <label for="name"> Patient Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="text" id="dob" name="dob"><br>
+        <label for="gp">General Practitionar:</label><br>
+        <input type="text" id="gp" name="gp"><br>
+        <label for="hn">Hospital Number:</label><br>
+        <input type="text" id="hn" name="hn"><br>
+        <label for="dop">Date of Procedure:</label><br>
+        <input type="text" id="dop" name="dop"><br>
+        <label for="ep">Endoscopist:</label><br>
+        <input type="text" id="ep" name="ep"><br>
+        <label for="nurses">Nurses:</label><br>
+        <input type="text" id="nurses" name="nurses"><br>
+        <input type="file" name="file" />
+        <input type = "submit" value="Upload">
+      </form>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Report Prediction</title>
+</head>
+<body>
+  <h1 style="font-size:30px;margin-left: 5em;">Endoscopy Report </h1>
+  <hr size="5" width="90%" color="Blue"> 
+  <div class="container">
+  <div class="row">
+
+    <div class="col-sm">
+      <h1 style="font-size:20px; color:gray;">Patient Name: <span style="font-size:20px; color:black;">{{name}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">Date of Birth: <span style="font-size:20px; color:black;">{{dob}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">General Parcticionar: <span style="font-size:20px; color:black;">{{gp}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">Hospital Number: <span style="font-size:20px; color:black;">{{hn}}</span></h1>
+      <h1 style="font-size:20px; color:gray;"> Date of Procedure: <span style="font-size:20px; color:black;">{{dop}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">Endoscopist: <span style="font-size:20px; color:black;">{{ep}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">Nurses: <span style="font-size:20px; color:black;">{{nurses}}</span></h1>
+      <h1 style="font-size:20px; color:gray;">Findings: <span style="font-size:20px; color:black;">{{lst}}</span></h1>
+    </div>
+
+    <div class="col-sm">
+      <span class="border border-primary">
+        <img src="{{ user_image1 }}" alt="User Image" class="img-thumbnail" style="width:170px;height:170px;">
+      </span>
+      <span class="border border-primary">
+        <img src="{{ user_image2 }}" alt="User Image" class="img-thumbnail" style="width:170px;height:170px;">
+      </span><br>
+      <span class="border border-primary">
+        <img src="{{ user_image3 }}" alt="User Image" class="img-thumbnail" style="width:170px;height:170px;">
+      </span>
+      <span class="border border-primary">
+        <img src="{{ user_image4 }}" alt="User Image" class="img-thumbnail" style="width:170px;height:170px;">
+      </span>
+    </div>
+
+
+  </div>
+</div>
+<hr size="5" width="90%" color="Blue"> 
+  <div class="container">
+  <div class="row">    
+   
+    <div>
+      <h1 style="font-size:20px; color:gray;">Endoscopic Diagnosis:</h1>
+      <textarea rows = "1" cols = "60" name = "description">
+
+      </textarea><br>
+      <h1 style="font-size:20px; color:gray;">Recommendations:</h1>
+      <textarea rows = "2" cols = "60" name = "description">
+
+      </textarea><br>
+      <h1 style="font-size:20px; color:gray;">Follow Up:</h1>
+      <textarea rows = "1" cols = "60" name = "description">
+
+      </textarea><br>
+      <h1 style="font-size:20px; color:gray;">Signature: <hr size="40" width= "50%" text-align=left color="black"></h1>
+  
+    </div>
+  </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
